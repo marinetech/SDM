@@ -1,0 +1,3 @@
+[submodule "evins"]
+	path = evins
+	url = git://github.com/okebkal/evins.git
