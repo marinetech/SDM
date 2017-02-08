@@ -11,4 +11,4 @@ EOF
 
 python refgen.py
 python txgen.py
-gnome-terminal -e "./_rel/evins/bin/evins console"
+gnome-terminal -e "./evins/_rel/evins/bin/evins console"
