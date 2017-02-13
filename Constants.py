@@ -1,5 +1,5 @@
-fs = 250000
-ns = 125000
+fs = 250000 	#Sample frequency 
+ns = 25000	#Number of samples
 #nsamples = 125000
 fstart = 7000 
 fend = 17000
@@ -8,5 +8,7 @@ fend = 17000
 nref = 1024
 fc = 20000
 p = 1
-a = 20000
+a = 30000
+baseAmp = 10
+maxAmp = 30000
 listen = 250000

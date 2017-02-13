@@ -1,4 +1,4 @@
-1,7000,17000,3
+100,7000,17000,3
 amplitude(1-32000),start frequence,end frequency,number of chirps
 ****
 The program reads only the first line.

@@ -173,8 +173,8 @@ int main(int argc, char *argv[])
       tokens = strsplit(line, ",", &numtokens);
       if (numtokens == 4){
         amplitude = atof(tokens[0]);
-	      fstart = atof(tokens[1]);
-	      fend = atof(tokens[2]);
+	fstart = atof(tokens[1]);
+	fend = atof(tokens[2]);
         retn = atof(tokens[3]);
         mp = atof(tokens[3]);
       } else {
