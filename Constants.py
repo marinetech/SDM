@@ -1,15 +1,15 @@
-fs = 62500 	# Sample frequency 48-72 = 250K ; 7-17 = 62.5K
+fs = 250000 	# Sample frequency 48-72 = 250K ; 7-17 = 62.5K
 ns = fs/10	# Number of samples in sec out of sf
-fstart = 7000 	# frequency start for the chirp / signal frequency for the sin
-fend = 17000	# frequency end for the chirp
+fstart = 48000 	# frequency start for the chirp / signal frequency for the sin
+fend = 72000	# frequency end for the chirp
 fc = 20000
 p = 1		# the slope of the chirp
 baseAmp = 32000 	# minimal amplitude for the signal
 maxAmp = 10 	# max amplitude for the signal
 deltaAmp = -1000 	# delta between each amplitude step
-numberOfChirps = 1
+numberOfChirps = 5
 isSin = False 	# True = sinwave , False = Chirp
-extraWait = fs * 2 # basic chirp = 1 sec ; 
+extraWait = fs * 0 # basic chirp = 1 sec ; 
 
 # 48-72 modem special settings
 d4872 = {'fs':'250000',

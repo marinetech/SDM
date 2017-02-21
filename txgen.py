@@ -11,11 +11,7 @@ def createREF():
 		#print(str(int(sample)))
 		f.write(str(int(sample)))
 		f.write("\n")
-	for k in range(0,c.fs-c.ns):
-		sample = 0
-		#print(str(int(sample)))
-		f.write(str(int(sample)))
-		f.write("\n")
+
 
 
 def createTX(expAmp = 0):
@@ -31,7 +27,7 @@ def createTX(expAmp = 0):
 			#print(str(int(sample)))
 			f.write(str(int(sample)))
 			f.write("\n")
-		for k in range(0,c.fs-c.ns + extraWait):
+		for k in range(0,c.fs-c.ns + c.extraWait):
 			sample = 0
 			#print(str(int(sample)))
 			f.write(str(int(sample)))
@@ -45,6 +41,11 @@ f.close()
 f = open('/tmp/tx','w')
 print("Creating /tmp/tx")
 createREF()
+for k in range(0,c.fs-c.ns):
+	sample = 0
+	#print(str(int(sample)))
+	f.write(str(int(sample)))
+	f.write("\n")
 for r in range(c.baseAmp,c.maxAmp + 1 ,c.deltaAmp):
 	createTX(r)
 f.close()
