@@ -7,9 +7,6 @@ echo "" > /tmp/rx.txt
 echo Constants :
 cat Constants.py
 
-echo Generating ref
-python refgen.py
-
 echo Generating tx
 python txgen.py
 
